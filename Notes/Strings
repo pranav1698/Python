@@ -13,3 +13,6 @@ Strings can be seen as an ordered sequence of an array of numbers.
 
 ** Slicing and Stride:
 	Name[0:5:2] = 'Mca'
+
+** Python strings are immutable; this means that we cannot make a new string be assignment
+	Name[0] = 'J'
