@@ -1,0 +1,15 @@
+Strings can be seen as an ordered sequence of an array of numbers.
+** We can also use negative index in python;
+	the last character is at negative index. **
+
+	Let Name = 'Michael Jackson'
+
+** Slicing:
+	Name[0:4] = 'Mich'
+	Name[8:12] = 'Jack'
+
+** Stride
+	Name[::2] = 'McalJcsn'
+
+** Slicing and Stride:
+	Name[0:5:2] = 'Mca'
