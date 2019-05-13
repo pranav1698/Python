@@ -1,0 +1,32 @@
+Lists are ordered sequences represented with square brackets, which are mutable.
+
+L = ['Michael Jackson', 10.1, 1982, "MJ", 1]
+L[0] = 'Michael Jackson'
+
+* Slicing
+L[3:5] = ["MJ", 1]
+
+* Concatenation
+L1 = L + ["pop", 10]
+L1 = ["Michael Jackson", 10.1, 1982, "pop", 10]
+
+* Mutablity
+Lists are mutable
+They can be modified by using the extend method,
+L.extend(["pop", 10])
+>> L = ["Michael Jackson", 10.1, 1982, "pop", 10]
+L.append(["pop", 10])
+>> L = ["Michael Jackson", 10.1, 1982, ["pop", 10]]
+
+A= ["disco", 10, 1.2]
+A[0] = "hard rock"
+A = ["hard rock", 10, 1.2]
+
+** deleting the elements
+del(A[0])
+A = [10, 1.2]
+
+** List Aliasing
+B = A
+then if we change A[0]="banana" then B[0] will also change
+B will be ['banana', 10, 1.2]

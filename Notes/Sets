@@ -1,0 +1,34 @@
+* Sets are type of a collection
+	We can input different Python types
+*  Unlike lists and tuples they are unordered
+	This means they do not record element position
+* Sets only have unique elements
+	This means there is only one of a particular element in a set
+
+* Creating a set
+Set1={"pop", "rock", "soul", "hard rock"}
+
+* Type-Casting
+We can convert a list to a set using the set() method
+album_list = ["Michael Jackson", "Thriller", "Thriller", 1982]
+album_set = set(album_list)
+>> album_set = {"Michael Jackson", "Thriller", 1982}
+
+* Set Operation
+A: {"Thriller", "Back in Black", "AC/DC"}
+A.add("NSYNC")
+>> A: {"Thriller", "Back In Black", "AC/DC", "NSYNC"}
+A.remove("NSYNC")
+>> A: {"Thriller", "Back in Black", "AC/DC"}
+"AC/DC" in A
+>> True
+
+album_set_1 = {"Thriller", "Back in Black", "AC/DC"}
+album_set_2 = {"Back in Black", "AC/DC", "The Dark Side of the Moon"}
+album_set_3 = album_set_1 & album_set_2
+>> {"AC/DC", "Back in Black"}
+album_set_1.union(album_set_2)
+>> {"AC/DC", "Back in Black", "Thriller", "The Dark Side of the Moon"}
+album_set_3.issubset(album_set_1)
+>> True
+

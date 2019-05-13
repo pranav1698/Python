@@ -1,0 +1,8 @@
+Dictionaries are denoted by curly brackets {}
+The keys have to be immutable and unique
+** Values can be immutable, mutable and duplicates
+Each key and value pair is seperated by a comma
+
+Dict.keys() = list of all keys
+Dict.values() = list of all values
+
