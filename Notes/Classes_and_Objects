@@ -1,0 +1,42 @@
+* Every object has:
+	1. a type
+	2. an internal data representation
+	3. a set of procedures for interacting with object
+
+** An object is an instance of a particular type
+A class or type's methods are functions that every instance of that class or type provides
+
+class Circle
+	# data attributes: radius, color
+	class Circle(object):
+
+class Rectangle
+	# data attributes: height, width, color
+	class Rectangle(object):
+
+** Create a class: Circle
+class Circle(object):
+	def __init__(self, radius, color):
+		self.radius = radius # data attributes used to initialize each instance of the class
+		self.color = color
+
+	def add_radius(self, r):
+		self.radius += r
+		return self.radius
+
+def __init__(self, radius, color):
+__init__ : special method or constructor used to initialize data attributes parameters.
+self parameter signifies the instance of the class created
+
+
+* Create a class rectangle
+class Rectangle(object):
+	def __init__(self, width,height,color):
+		self.color = color
+		self.width = width
+		self.height = height
+
+
+RedCircle = Circle(10, 'red')
+RedCircle.add_radius(10)
+

@@ -1,0 +1,27 @@
+Built in functions:
+1. len():
+	input: sequence
+	return value: length of the sequence
+2. sum():
+	input: sequence
+	return value: sum of the values in the sequence
+3. sorted():
+	input: sequence
+	return value: sorted sequence
+
+** Python does not allow functions with empty body,
+	hence we need to ude the keyword pass when the function is defined
+	
+	def NoWork():
+		pass
+
+	print(NoWork())
+
+** Collecting arguments:
+	def ArtistNames(*names):
+		for name in names:
+			print(name)
+
+	* Called with variable number of arguments hence called variadic parameters.
+
+	
