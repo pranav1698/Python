@@ -1,0 +1,44 @@
+File1 = open('./text.txt', 'r')
+
+path = File1.name
+mode = File1.mode
+
+* Always close the file using the File1.close() statement
+Using a with statement is better, because it automatically closes the file.
+
+
+with open('./text.txt', 'r') as File:
+	file_stuff=File1.read()
+	print file_stuff
+
+print file_stuff
+
+** with open('./text.txt', 'r') as File1:
+	file_stuff = File1.readlines()
+	print(file_stuff)
+
+>> list of lines as elements, which can be read using a loop
+
+** with open('./text.txt', 'r'):
+	file_stuff = File1.readline()
+	print(file_stuff)
+>> as called once it will print the first line of the file
+	file_stuff = File1.readline()
+	print(file_stuff)
+>> as called secondly, now the second line will be stored in the variable file_stuff
+
+** Looping through a file
+
+with open('./text.txt', 'r') as File1:
+	for line in File1:
+		print(line)
+
+** Writing text into the file:
+Mode w will create a new file
+with open('./text.txt', 'w') as File1:
+	File1.write('This is line A\n')
+	File1.write('This is line B\n')
+
+** Mode a for append will append the line in the same file
+with open('text.txt', 'a') as File1:
+	File1.write('This is line c')

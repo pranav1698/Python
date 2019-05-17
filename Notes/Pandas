@@ -1,0 +1,43 @@
+** Pandas is a popular libraray for data analysis
+
+import pandas as pd
+csv_path = 'file.csv'
+df = pd.read_csv(csv_path)
+
+** Dataframes:
+df is the short of a dataframe
+** df.head() is used for getting the first 5 rows in a dataframe
+
+xlsx_path = 'file1.xlsx'
+df = pd.read_excel(xlsx_path)
+df.head()
+** Dataframes consists of rows and columns
+
+
+# Dataframe from a dictionary
+The dictionary can be converted into a dataframe using pd.DataFrame() method.
+song_frame = pd.DataFrame(value-of-dictionary)
+** keys are the columns in the datahrame
+** the values are the number of rows
+
+# Creating a dataframe from another dataframe
+x=df[[column_headers]
+
+# Accesing elements in a dataframe
+y = df.ix[0,0]
+y = df.ix[0,1]
+z = df.ix[1,column_header]
+
+# Slicing the dataframe:
+z = df.ix[0:2, 0:3]
+y = df.ix[0:2, column_header1:column_header2]
+
+** Working with and Saving data
+* You need to get the unique elements in the column of a dataframe
+df[column-header].unique(): all of the unique elememts in the column header
+df[column-header] >= 1980 : list of boolean values according to the set condidition
+
+df1 = df[df['column-header'] >= 1980]
+
+* Save as csv
+df1.to_csv9('new_songs.csv')
