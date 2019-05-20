@@ -21,7 +21,7 @@ song_frame = pd.DataFrame(value-of-dictionary)
 ** the values are the number of rows
 
 # Creating a dataframe from another dataframe
-x=df[[column_headers]
+x=df[[column_headers]]
 
 # Accesing elements in a dataframe
 y = df.ix[0,0]
