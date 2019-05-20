@@ -1,0 +1,75 @@
+Array Creation:
+ndarray: fixed in size and has elements of the same type 
+
+import numpy as np
+a=np.array([0,1,2,3,4])
+
+a[0]: 1
+type(a): numpy.ndarray
+a.dtype: dtype('int64')
+
+a.size: 5
+a.ndim: 1
+a.shape: (5,)
+	* gives a tupleindicates the size of the array in each dimension
+
+Indexing and Slicing:
+c=np.array([20,1,2,3,4])
+c[0] = 100
+
+c: array([100, 1, 2, 3, 4])
+
+d = c[1:4]
+d:array([1,2,3])
+
+Basic Operations:
+* Vector addition using numpy arrays:
+	u = np.array([1,0])
+	v = np.array([0,1])
+
+	z = u + v
+	z:array([1,1])
+
+* Vector subtraction:
+	z = u -v
+
+* Vector Multiplication:
+	y = np.array([1,2])
+	z = 2*y
+	z:array([2, 4])
+
+* Hadamard product 
+	u = np.array([1,2])
+	v = np.array([3,2])
+
+	z = u*v
+	z:array([3, 4])
+
+* Dot product
+	u = np.array([1, 2])
+	v = np.array([3,1])
+
+	z = np.dot(u,v)
+	z: 5
+
+* Adding constant to an numpy array
+	u = np.arrray([1,2,3,-1])
+	z = u + i
+	z:array([2,3,4,0])
+
+Universal function:
+a = np.array([1,-1,1,-1])
+mean_a = a.mean()
+mean_a: 0
+
+max_a = b.max()
+
+np.pi: pi
+x = np.array([0,np.pi/2,np.pi])
+y = np.sin(x)
+
+np.linspace(-2,2, num=5)
+
+import mathplotlib as plt
+%mathplotlib inline
+plt.plot(x,y)
